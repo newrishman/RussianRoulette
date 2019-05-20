@@ -23,7 +23,7 @@ class AllPrint {
             y = "Игрок 2";
             x = y + AllText.user();
         } else if (a == 8) {
-            y = "Игрок 3";
+            y = "Игрок";
             x = y + AllText.user();
         } else if (a == 9) {
             x = AllText.nothing();

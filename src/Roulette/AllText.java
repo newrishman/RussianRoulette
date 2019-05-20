@@ -34,8 +34,9 @@ class AllText {
     }
 
     protected static String end() {
-        return "Количество попыток для самоубийства - ";
+        return " раз вам повезло...";
     }
+
     protected static String error() {
         return "Некорректный ввод";
     }
