@@ -6,8 +6,6 @@ public class Again {
     protected static void classic() throws IOException {
         AllPrint.all(4);
 
-
-
         while (0 < 1) {
             AllPrint.all(5);
             UserBang.start();
@@ -22,6 +20,8 @@ public class Again {
                 AllPrint.all(9);
                 i++;
             }
+
+            AllPrint.all(5);
             UserBang.start();
             bullet = Bullet.bullet();
             i = 0;
@@ -40,9 +40,7 @@ public class Again {
     }
 
     protected static void singlePlayer() throws IOException {
-
         AllPrint.all(4);
-
         int count = 0;
 
         while (0 < 1) {
@@ -61,8 +59,6 @@ public class Again {
                 i++;
             }
         }
-
-
         System.out.print(count - 1);
         AllPrint.all(11);
     }
