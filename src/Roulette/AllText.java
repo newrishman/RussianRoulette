@@ -34,7 +34,7 @@ class AllText {
 
     protected static String nothing() {
 
-        return "Вы слышите, как курок глухо бьет в пустоту";
+        return "Вы слышите, как курок глухо бьет в пустоту\n";
     }
 
     protected static String death() {
@@ -43,7 +43,6 @@ class AllText {
     }
 
     protected static String error() {
-        return
-                "Некорректный ввод!";
+        return "Некорректный ввод! Но не прерывать же игру, да?";
     }
 }
