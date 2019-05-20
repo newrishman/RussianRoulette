@@ -48,7 +48,7 @@ public class Again {
             UserBang.start();
             int[] bullet = Bullet.bullet();
             int i = 0;
-            AllPrint.all(6);
+            AllPrint.all(8);
             UserBang.bang();
             count++;
             if (bullet[i] == 1) {
@@ -59,8 +59,7 @@ public class Again {
                 i++;
             }
         }
-        System.out.print(count - 1);
-        AllPrint.all(11);
+        System.out.println("Количество попыток для самоубийства - " + count);
     }
 }
 

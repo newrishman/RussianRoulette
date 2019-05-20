@@ -55,8 +55,7 @@ public class Classic {
             }
         }
 
-        System.out.print(count - 1);
-        AllPrint.all(11);
+        System.out.println("Количество попыток для самоубийства - " + count);
     }
 }
 

@@ -9,6 +9,7 @@ class UserBang {
         if (start.equals("   ")) {
             return 1;
         } else {
+            AllPrint.all(12);
             return 0;
         }
     }
@@ -19,8 +20,8 @@ class UserBang {
         if (bang.equals("")) {
             return 1;
         } else {
+            AllPrint.all(12);
             return 0;
         }
     }
-
 }

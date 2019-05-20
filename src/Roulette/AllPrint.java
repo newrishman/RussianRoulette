@@ -29,8 +29,6 @@ class AllPrint {
             x = AllText.nothing();
         } else if (a == 10) {
             x = AllText.death();
-        } else if (a == 11) {
-            x = AllText.end();
         } else {
             x = AllText.error();
         }
