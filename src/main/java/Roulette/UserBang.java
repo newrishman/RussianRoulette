@@ -4,7 +4,7 @@ import java.io.*;
 
 class UserBang {
     protected int start() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String start = reader.readLine();
         if (start.equals("   ")) {
@@ -16,7 +16,7 @@ class UserBang {
     }
 
     protected int bang() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String bang = reader.readLine();
         if (bang.equals("")) {

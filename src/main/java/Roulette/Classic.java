@@ -5,7 +5,7 @@ import java.io.*;
 class Classic {
     protected void classic() throws IOException {
 
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         UserBang userBang = new UserBang();
         Bullet bullete = new Bullet();
 
@@ -42,7 +42,7 @@ class Classic {
 
     protected void singlePlayer() throws IOException {
 
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         UserBang userBang = new UserBang();
         Bullet bullete = new Bullet();
 
