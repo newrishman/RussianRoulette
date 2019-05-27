@@ -3,31 +3,36 @@ package Roulette;
 import java.io.*;
 
 class Classic {
-    protected static void classic() throws IOException {
-        AllPrint.all(4);
-        AllPrint.all(5);
+    protected void classic() throws IOException {
 
-        UserBang.start();
-        int[] bullet = Bullet.bullet();
+        AllPrint allPrint = new AllPrint();
+        UserBang userBang = new UserBang();
+        Bullet bullete = new Bullet();
+
+        allPrint.all(4);
+        allPrint.all(5);
+
+        userBang.start();
+        int[] bullet = bullete.bullet();
         int i = 0;
 
         while (0 < 1) {
-            AllPrint.all(6);
-            UserBang.bang();
+            allPrint.all(6);
+            userBang.bang();
             if (bullet[i] == 1) {
-                AllPrint.all(10);
+                allPrint.all(10);
                 break;
             } else {
-                AllPrint.all(9);
+                allPrint.all(9);
                 i++;
             }
-            AllPrint.all(7);
-            UserBang.bang();
+            allPrint.all(7);
+            userBang.bang();
             if (bullet[i] == 1) {
-                AllPrint.all(10);
+                allPrint.all(10);
                 break;
             } else {
-                AllPrint.all(9);
+                allPrint.all(9);
                 i++;
             }
 
@@ -35,23 +40,28 @@ class Classic {
 
     }
 
-    protected static void singlePlayer() throws IOException {
-        AllPrint.all(4);
-        AllPrint.all(5);
-        UserBang.start();
+    protected void singlePlayer() throws IOException {
 
-        int[] bullet = Bullet.bullet();
+        AllPrint allPrint = new AllPrint();
+        UserBang userBang = new UserBang();
+        Bullet bullete = new Bullet();
+
+        allPrint.all(4);
+        allPrint.all(5);
+        userBang.start();
+
+        int[] bullet = bullete.bullet();
         int count = 0;
 
         for (int i : bullet) {
-            AllPrint.all(8);
-            UserBang.bang();
+            allPrint.all(8);
+            userBang.bang();
             count++;
             if (i == 1) {
-                AllPrint.all(10);
+                allPrint.all(10);
                 break;
             } else {
-                AllPrint.all(9);
+                allPrint.all(9);
             }
         }
 
