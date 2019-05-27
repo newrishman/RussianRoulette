@@ -1,8 +1,18 @@
 package Roulette;
 
+import java.io.PrintStream;
+
 class AllPrint {
+
+    private PrintStream out;
+    private AllText allText;
+
+    public AllPrint(PrintStream out, AllText allText) {
+        this.out = out;
+        this.allText = allText;
+    }
+
     protected void all(int a) {
-        AllText allText = new AllText();
 
         String x;
         String y;
@@ -34,6 +44,6 @@ class AllPrint {
             x = allText.error();
         }
 
-        System.out.println(x);
+        out.println(x);
     }
 }

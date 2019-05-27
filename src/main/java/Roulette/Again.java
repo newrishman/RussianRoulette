@@ -4,7 +4,7 @@ import java.io.*;
 
 class Again {
     protected void classic() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         UserBang userBang = new UserBang();
         Bullet bullete = new Bullet();
 
@@ -45,7 +45,7 @@ class Again {
 
     protected void singlePlayer() throws IOException {
 
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         UserBang userBang = new UserBang();
         Bullet bullete = new Bullet();
 

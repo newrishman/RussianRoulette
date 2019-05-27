@@ -4,7 +4,7 @@ import java.io.*;
 
 class AllRegulations {
     protected int choice() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int choice = Integer.parseInt(reader.readLine());
         if (choice > 0 && choice <= 2) {
@@ -16,7 +16,7 @@ class AllRegulations {
     }
 
     protected int quantity() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int quantity = Integer.parseInt(reader.readLine());
         if (quantity > 0 && quantity <= 2) {

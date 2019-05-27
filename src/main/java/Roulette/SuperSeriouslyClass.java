@@ -5,7 +5,7 @@ import java.io.*;
 public class SuperSeriouslyClass {
 
     public void start() throws IOException {
-        AllPrint allPrint = new AllPrint();
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
         AllRegulations allRegulations = new AllRegulations();
         Classic classic = new Classic();
         Again again = new Again();
