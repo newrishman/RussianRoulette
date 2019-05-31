@@ -13,7 +13,7 @@ public class BulletTest {
         for (int i = 0; i < test.length; i++) {
             x += test[i];
         }
-        assertEquals("Сумма массива должна быть единицей", 1, x);
+        assertEquals("Сумма массива должна ровняться единице", 1, x);
     }
 
     @Test
