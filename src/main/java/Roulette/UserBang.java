@@ -3,18 +3,17 @@ package Roulette;
 import java.io.*;
 
 class UserBang {
-    private String start;
-    private String bang;
+
 
     public String getStart() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        this.start = reader.readLine();
+        String start = reader.readLine();
         return start;
     }
 
     public String getBang() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        this.bang = reader.readLine();
+        String bang = reader.readLine();
         return bang;
     }
 
