@@ -12,11 +12,11 @@ class Again {
 
         while (0 < 1) {
             allPrint.all(5);
-            userBang.start();
+            userBang.start(userBang.getStart());
             int[] bullet = bullete.bullet();
             int i = 0;
             allPrint.all(6);
-            userBang.bang();
+            userBang.bang(userBang.getBang());
             if (bullet[i] == 1) {
                 allPrint.all(10);
                 break;
@@ -26,11 +26,11 @@ class Again {
             }
 
             allPrint.all(5);
-            userBang.start();
+            userBang.start(userBang.getStart());
             bullet = bullete.bullet();
             i = 0;
             allPrint.all(7);
-            userBang.bang();
+            userBang.bang(userBang.getBang());
             if (bullet[i] == 1) {
                 allPrint.all(10);
                 break;
@@ -54,11 +54,11 @@ class Again {
 
         while (0 < 1) {
             allPrint.all(5);
-            userBang.start();
+            userBang.start(userBang.getStart());
             int[] bullet = bullete.bullet();
             int i = 0;
             allPrint.all(8);
-            userBang.bang();
+            userBang.bang(userBang.getBang());
             count++;
             if (bullet[i] == 1) {
                 allPrint.all(10);

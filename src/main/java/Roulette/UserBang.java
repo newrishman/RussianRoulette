@@ -3,10 +3,24 @@ package Roulette;
 import java.io.*;
 
 class UserBang {
-    protected int start() throws IOException {
-        AllPrint allPrint = new AllPrint(System.out, new AllText());
+    private String start;
+    private String bang;
+
+    public String getStart() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String start = reader.readLine();
+        this.start = reader.readLine();
+        return start;
+    }
+
+    public String getBang() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        this.bang = reader.readLine();
+        return bang;
+    }
+
+    protected int start(String start) {
+        AllPrint allPrint = new AllPrint(System.out, new AllText());
+
         if (start.equals("   ")) {
             return 1;
         } else {
@@ -15,10 +29,9 @@ class UserBang {
         }
     }
 
-    protected int bang() throws IOException {
+    protected int bang(String bang) {
         AllPrint allPrint = new AllPrint(System.out, new AllText());
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String bang = reader.readLine();
+
         if (bang.equals("")) {
             return 1;
         } else {
