@@ -15,7 +15,8 @@ public class BulletTest {
         }
         assertEquals("Сумма массива должна быть единицей", 1, x);
     }
-@Test
+
+    @Test
     public void testBullet2() {
         Bullet bullet = new Bullet();
         int[] test = bullet.bullet();
