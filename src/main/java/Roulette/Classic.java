@@ -2,7 +2,7 @@ package Roulette;
 
 import java.io.*;
 
-class Classic {
+public class Classic {
     protected void classic() throws IOException {
 
         AllPrint allPrint = new AllPrint(System.out, new AllText());

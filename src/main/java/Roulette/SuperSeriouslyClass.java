@@ -3,6 +3,13 @@ package Roulette;
 import java.io.*;
 
 public class SuperSeriouslyClass {
+    private Classic classic;
+    private Again again;
+
+    public SuperSeriouslyClass(Classic classic, Again again) {
+        this.classic = classic;
+        this.again = again;
+    }
 
     public int getA() throws IOException {
 
@@ -28,9 +35,6 @@ public class SuperSeriouslyClass {
     }
 
     public void start(int a, int b) throws IOException {
-
-        Classic classic = new Classic();
-        Again again = new Again();
 
         if (a == 1 && b == 1) {
             classic.singlePlayer();
