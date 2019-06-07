@@ -1,9 +1,10 @@
 package Roulette;
 
 import org.junit.Test;
-import static org.mockito.Mockito.*;
-import java.io.IOException;
 
+import static org.mockito.Mockito.*;
+
+import java.io.IOException;
 
 
 public class SuperSeriouslyClassTest {
@@ -23,7 +24,7 @@ public class SuperSeriouslyClassTest {
         superSeriouslyClass.start(1, 1);
 
         // Дописал от отчаяния
-        doNothing().when( classicMock ).singlePlayer();
+        doNothing().when(classicMock).singlePlayer();
 
         // Проверяю, был ли вызван метод заглушки
         verify(classicMock, times(1)).singlePlayer();
