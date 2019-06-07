@@ -20,16 +20,20 @@ public class SuperSeriouslyClassTest {
         //Создаю объект класса SuperSeriously
         SuperSeriouslyClass superSeriouslyClass = new SuperSeriouslyClass();
 
+        // Дописал от отчаяния. Why he doesn't work????
+        doNothing().when(classicMock).singlePlayer();
+
         // Вызываю метод класса
         superSeriouslyClass.start(1, 1);
-
-        // Дописал от отчаяния
-        doNothing().when(classicMock).singlePlayer();
 
         // Проверяю, был ли вызван метод заглушки
         verify(classicMock, times(1)).singlePlayer();
 
-        // Получаю тест Шредингера, он просто пытается завершить метод SinglePlayer класса Classic
+        // Получаю тест Шредингера, он просто пытается выполнить и завершить метод singlePlayer класса Classic.
+        // Я ставлю себе вопрос о том, как я буду тестировать класс:
+        // при определенных значениях (пример: 1 и 1), вызывается ли метод singlePlayer у Classic?
+        // Да, вызывается, и даже работает, заррраза, хотя не должен.
+        // Либо лыжи не едут, либо я ... Неужели настолько говнистый код, что без конструктора не запустится тест?
 
     }
 /*
