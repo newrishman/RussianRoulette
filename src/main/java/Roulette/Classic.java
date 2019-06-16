@@ -3,11 +3,23 @@ package Roulette;
 import java.io.*;
 
 public class Classic {
-    protected void classic() throws IOException {
+    private AllPrint allPrint;
+    private UserBang userBang;
+    private Bullet bullete;
 
-        AllPrint allPrint = new AllPrint(System.out, new AllText());
-        UserBang userBang = new UserBang();
-        Bullet bullete = new Bullet();
+    public Classic(AllPrint allPrint, UserBang userBang, Bullet bullete) {
+        this.allPrint = allPrint;
+        this.userBang = userBang;
+        this.bullete = bullete;
+    }
+
+    public Classic() {
+        this.allPrint =  new AllPrint(System.out, new AllText());;
+        this.userBang = new UserBang();
+        this.bullete = new Bullet();
+    }
+
+    protected void classic() throws IOException {
 
         allPrint.all(4);
         allPrint.all(5);
@@ -41,10 +53,6 @@ public class Classic {
     }
 
     protected void singlePlayer() throws IOException {
-
-        AllPrint allPrint = new AllPrint(System.out, new AllText());
-        UserBang userBang = new UserBang();
-        Bullet bullete = new Bullet();
 
         allPrint.all(4);
         allPrint.all(5);
