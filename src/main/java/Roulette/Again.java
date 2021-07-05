@@ -2,11 +2,24 @@ package Roulette;
 
 import java.io.*;
 
-class Again {
+public class Again {
+    private AllPrint allPrint;
+    private UserBang userBang;
+    private Bullet bullete;
+
+    public Again(AllPrint allPrint, UserBang userBang, Bullet bullete) {
+        this.allPrint = allPrint;
+        this.userBang = userBang;
+        this.bullete = bullete;
+    }
+
+    public Again() {
+        this.allPrint = new AllPrint(System.out, new AllText());
+        this.userBang = new UserBang();
+        this.bullete = new Bullet();
+    }
+
     protected void classic() throws IOException {
-        AllPrint allPrint = new AllPrint(System.out, new AllText());
-        UserBang userBang = new UserBang();
-        Bullet bullete = new Bullet();
 
         allPrint.all(4);
 
@@ -45,9 +58,6 @@ class Again {
 
     protected void singlePlayer() throws IOException {
 
-        AllPrint allPrint = new AllPrint(System.out, new AllText());
-        UserBang userBang = new UserBang();
-        Bullet bullete = new Bullet();
 
         allPrint.all(4);
         int count = 0;
